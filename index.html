@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<body>
+    <script>
+        fetch('https://faucetpay.io/api/v1/currencies', {
+            method: 'post',
+            headers: {
+                api_key: '7feb4afc08571ce131058ad3e44e163c51e2a547d8dae9f538e654cd680177e6'
+            }
+        }).then(response => response.json()).then(data => console.log(data));
+    </script>
+</body>
